@@ -28,7 +28,7 @@ fi
 
 printf '\e[33mNext, create app config file - fly.toml.\n\e[0m'
 cat <<EOF >./fly.toml
-app = "$APP_NAME"
+app = "lee2v2"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
