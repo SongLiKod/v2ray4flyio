@@ -69,6 +69,9 @@ EOF
 printf '\e[32mCreate app config file success.\n\e[0m'
 printf '\e[33mNext, set app secrets and regions.\n\e[0m'
 
+printf '\e[33Next,'+ ${APP_NAME} + '\n\e[0m'
+
+flyctl status --app ${APP_NAME}
 flyctl secrets set UUID="${UUID}"
 flyctl regions set ${REGION}
 printf '\e[32mApp secrets and regions set success. Next, deploy the app.\n\e[0m'
