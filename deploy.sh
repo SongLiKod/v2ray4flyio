@@ -73,4 +73,4 @@ flyctl secrets set UUID="${UUID}"
 flyctl regions set ${REGION}
 printf '\e[32mApp secrets and regions set success. Next, deploy the app.\n\e[0m'
 flyctl deploy --detach
-# flyctl status --app ${APP_NAME}
+flyctl status --app ${APP_NAME}
